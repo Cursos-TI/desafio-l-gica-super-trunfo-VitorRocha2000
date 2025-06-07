@@ -23,7 +23,6 @@
             float pibporcapital2;
             float superpoder2;
 
-            
             printf("digite o codigo da carta 1: \n");
             scanf("%s", &codigodacarta1);                     
             
@@ -117,44 +116,83 @@
 
             if (populacao1 > populacao2){
                 printf("carta 1 ganhou em populacao!\n");
+            }else if (populacao1 == populacao2){
+                printf("populacao foi empate\n");
             }else{
                 printf("carta 2 ganhou em populacao!\n");
             }
 
             if (area1 > area2){
                 printf("carta 1 ganhou em area!\n");
+            }else if (area1 == area2){
+                printf("area foi empate\n");
             }else{
                 printf("carta 2 ganhou em area!\n");
             }
 
             if (pib1 > pib2){
                 printf("carta 1 ganhou em pib!\n");
+            }else if (pib1 == pib2){
+                printf("pib foi empate\n");
             }else{
                 printf("carta 2 ganhou em pib!\n");
             }
 
             if (numerodepontosturistico1 > numerodepontosturistico2){
                 printf("carta 1 ganhou em numero de pontos turistico!\n");
+            }else if (numerodepontosturistico1 == numerodepontosturistico2){
+                printf("numero de pontos turistico foi empate\n");
             }else{
                 printf("carta 2 ganhou em numero de pontos turistico!\n");
             }
 
             if (densidade1 < densidade2){
                 printf("carta 1 ganhou em menor densidade!\n");
+            }else if (densidade1 == densidade2){
+                printf("densidade foi empate\n");
             }else{
                 printf("carta 2 ganhou em menor densidade!\n");
             }
 
             if (pibporcapital1 > pibporcapital2){
                 printf("carta 1 ganhou em pib por capital!\n");
+            }else if (pibporcapital1 == pibporcapital2){
+                printf("pib por capital foi empate\n");
             }else{
                 printf("carta 2 ganhou em pib por capital!\n");
             }
 
             if (superpoder1 > superpoder2){
                 printf("carta 1 ganhou em super poder!\n");
+            }else if (superpoder1 == superpoder2){
+                printf("super poder foi empate\n");
             }else{
                 printf("carta 2 ganhou em super poder!\n");
+            }
+
+            int opcao;
+
+
+            printf("opcoes de jogo\n");
+            printf("1. para comparar cartas\n");
+            printf("2. regras do jogo\n");
+            scanf("%d", &opcao);
+
+            switch (opcao)
+            {
+            case 1:
+                printf("comparecoes\n");
+                printf("populacao carta 1 : %d - populacao carta 2 : %d\n", populacao1, populacao2);
+                printf("area carta 1 : %f - area carta 2 : %f\n", area1, area2);
+                printf("pib carta 1 : %f - pib carta 2 : &f\n", pib1, pib2);
+                printf("pontos turisticos carta 1 : %d - pontos turisticos carta 2 :\n", numerodepontosturistico1, numerodepontosturistico2);
+                break;
+                case 2:
+                printf("regras do jogo......\n");
+                break;
+                default:
+                printf("opcao invalida");
+                break;
             }
 
 
